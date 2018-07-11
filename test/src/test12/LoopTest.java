@@ -20,16 +20,15 @@ public class LoopTest {
 			System.out.println(num[i]);
 		}
 		
-		System.out.println("-----------------------------------------------------");
-		
-		for(int i=0 ; i<num.length ; i++) {
-			arr[i] = (i+1)*3;
-		}
-		
-		
-		for(int i=0 ; i<num.length ; i++) {
-			System.out.println(arr[i]);
-		}
+//		System.out.println("-----------------------------------------------------");
+//		
+//		for(int i=0 ; i<num.length ; i++) {
+//			arr[i] = (i+1)*3;
+//		}
+//		
+//		for(int i=0 ; i<num.length ; i++) {
+//			System.out.println(arr[i]);
+//		}
 		
 		
 		
