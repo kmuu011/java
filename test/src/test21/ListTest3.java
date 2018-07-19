@@ -18,7 +18,7 @@ public class ListTest3 {
 		
 		for(int i=0 ; i<3 ; i++) {
 			String name = "테스0"+ i;
-			int grade = (int)(Math.random()*6)+1;
+			int grade = (int)(Math.random()*10)+1;
 			
 			s = new Student(name,grade);
 			sList.add(s);
@@ -33,7 +33,6 @@ public class ListTest3 {
 				}
 			}
 		}
-		
 		
 		
 		for(Student st : sList) {
