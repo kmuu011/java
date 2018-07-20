@@ -13,7 +13,7 @@ public interface UserDAO {
 	
 	public ArrayList<HashMap<String, String>> selectUserInfoList(HashMap<String,String> userInfo);
 	
-	
+	public void showUser();
 	
 	
 }

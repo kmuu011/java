@@ -42,8 +42,8 @@ public class DBProcesser implements DBCommand {
 	@Override
 	public int updateUser(HashMap<String, String> info) {
 		showUser();
-		System.out.println("수정할 유저의 이름을 입력해주세요");
-		String nam = scan.nextLine();
+		System.out.println("수정할 유저의 번호를 입력해주세요");
+		String num = scan.nextLine();
 		
 		System.out.println("수정할 메타데이터를 입력해주세요");
 		System.out.println("이름, 나이, 기타");
@@ -62,16 +62,17 @@ public class DBProcesser implements DBCommand {
 			System.out.println("잘못 입력하셨습니다.");
 			return 0;
 		}
+		
 		System.out.println("뭐로 바꿀건가요?");
 		val = scan.nextLine();
 		
-		String sql = "update user_info set "+ metaD + "=? where uName=?";
+		String sql = "update user_info set "+ metaD + "=? where uNum=?";
 			
 		try {
 			PreparedStatement ps = this.con.prepareStatement(sql);
 			
 			ps.setString(1, val);
-			ps.setString(2, nam);
+			ps.setString(2, num);
 			
 			return ps.executeUpdate();
 			

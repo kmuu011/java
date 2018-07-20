@@ -24,6 +24,7 @@ public class DBsearvice {
 		info.put("uAge", "25");
 		
 		setUserNum(info);
+		
 	}
 	
 	static void selectUser() {
