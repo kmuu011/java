@@ -33,12 +33,9 @@ public class ListTest {
 		}
 		
 		for(int i=idx ; i<tmpArr.length-1 ;i++) {
-			for(int j=i+1 ; j<=i+1 ; j++) {
 				String t = tmpArr[i];
-				tmpArr[i] = tmpArr[j];
-				tmpArr[j] = t;
-				
-			}
+				tmpArr[i] = tmpArr[i+1];
+				tmpArr[i+1] = t;
 		}
 		
 		for(int i=0 ; i<this.strArr.length ; i++) {
