@@ -28,9 +28,8 @@ public class SetName {
 					System.out.println(i+1+"번째 고양이의 이름을 입력하세요.");
 					Animal cat = new Cat(scan.nextLine());
 					al.add(cat);
-					
 				}
-				
+		
 			}else if(q.equals("출력")) {
 				for(Animal a:al) {
 					System.out.println(a);
@@ -38,7 +37,6 @@ public class SetName {
 			} else {
 				System.out.println("잘못입력했자너");
 			}
-			
 		}
 		
 		
