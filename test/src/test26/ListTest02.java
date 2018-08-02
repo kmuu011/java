@@ -14,8 +14,8 @@ public class ListTest02 {
 		
 
 		for (int i = 0; i < 10; i++) {
-			Integer num = (int) (Math.random() * 10) + 1;
-			String str = StringUtils.leftPad(num.toString(), 2, '0');
+			Integer num = (int) (Math.random() * 20) + 1;
+			String str = StringUtils.leftPad(num.toString(), 3, '0');
 			strList.add(str);
 		}
 
@@ -25,5 +25,6 @@ public class ListTest02 {
 		for (int i = 0; i < strList.size(); i++) {
 			System.out.println(strList.get(i));
 		}
+		
 	}
 }
